@@ -1,0 +1,19 @@
+h5 { 
+    margin-top: 2%;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    color: #F4D03F;
+}
+h5:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0; 
+    border-bottom: 3px solid #F4D03F;
+} 
+.card-header{
+    text-align: start;
+    font-size: 12pt;
+}

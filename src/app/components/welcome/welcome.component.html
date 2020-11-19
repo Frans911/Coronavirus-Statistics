@@ -1,0 +1,24 @@
+<body> 
+        <mat-grid-list cols="4" rowHeight="1:2">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile colspan="2">
+                <mat-card class="example-card">
+                    <mat-card-header> 
+                      <mat-card-title><b>Coronavirus Statistics</b></mat-card-title> 
+                    </mat-card-header> 
+                    <mat-card-content> 
+                        <img width="80%" src="../../../assets/images/coronavirus.jpg" alt=""> 
+                        <h5><b>What is COVID-19?</b></h5>
+                        <p>On 31 December 2019, the World Health Organization (WHO) reported a cluster of pneumonia cases in Wuhan City, China. ‘Severe Acute Respiratory <br>
+                            Syndrome Coronavirus 2’ (SARS-CoV-2) was confirmed as the causative agent of what we now know as ‘Coronavirus Disease 2019’ (COVID-19). Since then, <br>
+                            the virus has spread to more than 100 countries, including South Africa. </p>
+                    </mat-card-content>
+                    <mat-card-actions> 
+                        <!-- Action Buttons -->
+                        <button mat-raised-button color="warn" [routerLink]="['/Main/Workplace']">Statistics</button>
+                    </mat-card-actions> 
+                  </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile> 
+          </mat-grid-list>
+</body>

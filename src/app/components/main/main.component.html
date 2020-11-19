@@ -1,0 +1,22 @@
+<body>
+    <nav style="opacity: 0.8;" class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1" [routerLink]="['/Welcome']"><b> <i class="fa fa-bar-chart"></i> Coronavirus Statistics</b></span>
+        <ul class='nav nav-pills'>
+            <li><a class='nav-link' > <b>Hello!</b></a></li> 
+            </ul>
+      </nav> 
+    <br>
+    <div class="main"> 
+        <mat-drawer-container class="example-container">
+            <mat-drawer class="sidemenu"  mode="side" opened> 
+                <ul>
+                    <li style="color: #F4D03F;" [routerLink]="['/Main/Workplace']"> <b><i class="fa fa-building" aria-hidden="true"></i> Workplace</b></li>
+                    <li style="color: #48C9B0;" [routerLink]="['/Main/Cases']"> <b><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Cases</b></li>
+                    <li style="color: #5DADE2" [routerLink]="['/Main/Provinces']"><b><i class="fa fa-globe" aria-hidden="true"></i> Provinces</b></li>
+                    <li style="color: #EC7063;;" [routerLink]="['/Main/Deaths']"><b><i class="fa fa-heartbeat" aria-hidden="true"></i> Deaths</b></li> 
+                </ul>
+            </mat-drawer>
+            <mat-drawer-content> <router-outlet></router-outlet> </mat-drawer-content>
+          </mat-drawer-container> 
+    </div>
+</body>

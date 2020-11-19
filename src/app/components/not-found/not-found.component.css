@@ -1,0 +1,10 @@
+.jumbotron{
+    text-align: center;
+}
+span:hover{
+    cursor: pointer;
+}
+.navbar{
+    margin: 0.5em;
+    border-radius: 5px;
+} 
